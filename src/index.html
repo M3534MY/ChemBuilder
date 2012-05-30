@@ -1,0 +1,68 @@
+<HTML>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<TITLE>
+IT IS HTML TO APPLET MYPARAMETERS
+</TITLE>
+<body>
+<script type="text/javascript">
+function Draw_Structure(str_type,str_name){
+	var str_div = document.getElementById("str_div");
+	var str_div_inner = document.getElementById("str_div_inner");
+	str_div_inner.innerHTML="<APPLET code='ChemApplet' archive='123.jar' width='500px' height='500px'>"+
+		"<param name=InputString   value="+str_name+">"+
+		"<param name=InputType   value="+str_type+">"+
+		"<param name=WidthBox  value=555>"+
+		"<param name=AreaBox   value=12345678>		<param name=floatBox  value=3.141592>		<param name=activeBox value=true>		</APPLET>		<font color='white'>ss</font>";
+	str_div.style.visibility="visible";
+}
+
+function Hide_Structure(){
+	var str_div = document.getElementById("str_div");
+	var str_div_inner = document.getElementById("str_div_inner");
+	alert("0");
+	str_div_inner.innerHTML="<font color='white'>ss</font>";
+	str_div.style.visibility="hidden";
+}
+</script>
+<a href="#" onclick=Draw_Structure(2,"метан")>метан</a></br>
+<a href="#" onclick=Draw_Structure(2,"декан")>декан</a></br>
+<a href="#" onclick=Draw_Structure(2,"пропан")>пропан</a></br>
+<a href="#" onclick=Draw_Structure(2,"2,3-диметил-4-бутилпентан")>2,3-диметил-4-бутилпентан</a></br>
+<a href="#" onclick=Draw_Structure(2,"5-изопропил-2,8-диметил-3-этилнонан")>5-изопропил-2,8-диметил-3-этилнонан</a></br>
+<a href="#" onclick=Draw_Structure(2,"2,2-диметилбутан")>2,2-диметилбутан</a></br>
+<a href="#" onclick=Draw_Structure(2,"1,1-диметилциклогексан")>1,1-диметилциклогексан</a></br>
+<a href="#" onclick=Draw_Structure(2,"2,2,5-триметилгексен-3")>2,2,5-триметилгексен-3</a></br>
+<a href="#" onclick=Draw_Structure(2,"2,4-диметилпентадиен-2,4")>2,4-диметилпентадиен-2,4</a></br>
+<a href="#" onclick=Draw_Structure(2,"бутин-2")>бутин-2</a></br>
+<a href="#" onclick=Draw_Structure(2,"3-метилбутанол-2")>3-метилбутанол-2</a></br>
+<a href="#" onclick=Draw_Structure(2,"пропаналь")>пропаналь</a></br>
+<a href="#" onclick=Draw_Structure(2,"5,5-диметилгексанон-3")>5,5-диметилгексанон-3</a></br>
+<a href="#" onclick=Draw_Structure(2,"2-метилбутеновая_кислота")>2-метилбутеновая_кислота</a></br>
+<a href="#" onclick=Draw_Structure(2,"3-бутенол-2")>3-бутенол-2</a></br>
+<a href="#" onclick=Draw_Structure(2,"5,5-диметил-4-бутил-2-декиновая_кислота")>5,5-диметил-4-бутил-2-декиновая_кислота</a></br>
+производится из <a href="#" onclick=Draw_Structure(2,",бутан")>бутана</a></br>
+<a href="#" onclick=Draw_Structure(3,"метан")>метан3d</a></br>
+<a href="#" onclick=Draw_Structure(3,"метан")>метан</a></br>
+<a href="#" onclick=Draw_Structure(3,"декан")>декан</a></br>
+<a href="#" onclick=Draw_Structure(3,"пропан")>пропан</a></br>
+<a href="#" onclick=Draw_Structure(3,"2,3-диметил-4-бутилпентан")>2,3-диметил-4-бутилпентан</a></br>
+<a href="#" onclick=Draw_Structure(3,"5-изопропил-2,8-диметил-3-этилнонан")>5-изопропил-2,8-диметил-3-этилнонан</a></br>
+<a href="#" onclick=Draw_Structure(3,"2,2-диметилбутан")>2,2-диметилбутан</a></br>
+<a href="#" onclick=Draw_Structure(3,"1,1-диметилциклогексан")>1,1-диметилциклогексан</a></br>
+<a href="#" onclick=Draw_Structure(3,"2,2,5-триметилгексен-3")>2,2,5-триметилгексен-3</a></br>
+<a href="#" onclick=Draw_Structure(3,"2,4-диметилпентадиен-2,4")>2,4-диметилпентадиен-2,4</a></br>
+<a href="#" onclick=Draw_Structure(3,"бутин-2")>бутин-2</a></br>
+<a href="#" onclick=Draw_Structure(3,"3-метилбутанол-2")>3-метилбутанол-2</a></br>
+<a href="#" onclick=Draw_Structure(3,"пропаналь")>пропаналь</a></br>
+<a href="#" onclick=Draw_Structure(3,"5,5-диметилгексанон-3")>5,5-диметилгексанон-3</a></br>
+<a href="#" onclick=Draw_Structure(3,"2-метилбутеновая_кислота")>2-метилбутеновая_кислота</a></br>
+<a href="#" onclick=Draw_Structure(3,"3-бутенол-2")>3-бутенол-2</a></br>
+<a href="#" onclick=Draw_Structure(3,"5,5-диметил-4-бутил-2-декиновая_кислота")>5,5-диметил-4-бутил-2-декиновая_кислота</a></br>
+<div id="str_div" style="position: absolute; left: 99px; top: 50px; background-color: black; visibility: hidden; height:500px;">
+	<div style='position:relative; left:290px; top:-10px; background-color: red; height:20px; width:20px;'><a href="#" onclick="Hide_Structure()">X</a></div>
+	<div id="str_div_inner">
+		<font color='white'>ss</font>
+	</div>
+</div>
+</body>
+</HTML>
